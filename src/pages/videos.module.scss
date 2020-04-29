@@ -1,0 +1,25 @@
+.videosContainer {
+  top: 0;
+  left: 0;
+  padding-top: 3rem;
+  padding-left: .5rem;
+  width: 80%;
+  height: 100%; 
+  display: grid;
+  grid-template-columns: 1fr;
+  // grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 1000px) {
+  .videosContainer {
+    top: 0;
+    left: 0;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    width: 80%;
+    height: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
