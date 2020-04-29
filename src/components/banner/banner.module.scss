@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+}
+
+.image {
+  // position: relative;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 34.75rem;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url('../../assets/images/tub.png');
+}
+
+h1 {
+  color: #fff2df;
+  margin: 0 auto;
+  padding: 3.5rem 0;
+  text-transform: uppercase;
+  font-family: 'Inter';
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: .2rem;
+  border-bottom: none;
+}
+
+.toggler:checked > h1 {
+  visibility: hidden;
+}
+
+// browser width
+@media screen and (min-width: 1000px) {
+  .image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url('../../assets/images/truck.png');
+    margin-top: 4.5rem;
+    border-top: 1px solid #fff2df;
+  }
+  h1 {
+      font-size: 2.9rem;
+      text-shadow: 6px 6px 15px #471F13;
+      position: absolute;
+      margin: 2.5rem auto;
+      width: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      letter-spacing: .2rem;   
+  }
+}
+
