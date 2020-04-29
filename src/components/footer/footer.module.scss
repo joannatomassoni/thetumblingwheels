@@ -1,0 +1,23 @@
+.contact {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #fff2df;
+  text-align: justify;
+}
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact a:hover {
+  color: #fcd08f;
+}
+
+@media screen and (min-width: 1000px) {
+  .contact {
+    margin: .5rem 0;
+    text-align: center;
+  }
+}
