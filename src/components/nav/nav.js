@@ -6,7 +6,7 @@ const Nav = () => {
 	
 	return (
 		<div className={navStyles.header}>
-			<input type='checkbox' className={navStyles.toggler}/>
+			<input type='checkbox' aria-label="checkbox" className={navStyles.toggler}/>
 			<div className={navStyles.hamburger}><div></div></div>
 				<nav className={navStyles.nav}>
 					<ul className={navStyles.navItems}>

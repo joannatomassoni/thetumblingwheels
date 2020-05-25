@@ -9,24 +9,50 @@ const Button = ({ text }) => {
       <button className={buttonStyles.button}>
         <a 
           href='https://www.facebook.com/thetumblingwheels'
-          className={buttonStyles.socialItem}>
+          className={buttonStyles.socialItem}
+          rel='noreferrer'
+          target='_blank'>
 							<FiFacebook size={28} />
         </a>
         <a 
           href='https://open.spotify.com/artist/3XAKpaHzMbwGOs0VyHjZlV?si=AK_akki0TN2n9b-aFOO-nQ'
-          className={buttonStyles.socialItem}>
+          className={buttonStyles.socialItem}
+          rel='noreferrer'
+          target='_blank'>
 							<FaSpotify size={28} />
         </a>
         <a 
           href='https://www.instagram.com/thetumblingwheels/'
-          className={buttonStyles.socialItem}>
+          className={buttonStyles.socialItem}
+          rel='noreferrer'
+          target='_blank'>
 							<FiInstagram size={28} />
         </a>
       </button>
     )
-  } else {
+  } 
+  if (text === 'Mailing list') {
     return (
-      <button className={buttonStyles.button}>{text}</button>
+      <button className={buttonStyles.button}>
+        <a 
+          href='http://eepurl.com/dcQU4v'
+          rel='noreferrer'
+          target='_blank'>
+        {text}
+        </a>
+      </button>
+    )
+  }
+  if (text === 'Purchase') {
+    return (
+      <button className={buttonStyles.button}>
+        <a 
+          href='https://thetumblingwheels.bandcamp.com/merch'
+          rel='noreferrer'
+          target='_blank'>
+        {text}
+        </a>
+      </button>
     )
   }
 }
