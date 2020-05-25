@@ -1,7 +1,8 @@
 .mainText {
-  margin: 10rem auto 0;
+  margin: 16rem auto 0;
   padding: 0;
   color: #FCF3E3;
+  font-size: 2rem;
 }
 
 .mainText a {
@@ -14,6 +15,7 @@
   margin: 0 auto;
   padding: 0;
   color: #FCF3E3;
+  font-size: 2rem;
 }
 
 .mainTextTwo a {
@@ -24,10 +26,11 @@
 
 @media screen and (max-width: 1000px) {
   .mainText {
-    margin: 7rem auto 0;
+    margin: 12rem 1rem 0 0;
     padding: 0;
     color: #FCF3E3;
     text-align: center;
+    font-size: 1.5rem;
   }
   
   .mainText a {
@@ -37,9 +40,11 @@
   }
   
   .mainTextTwo {
-    margin: 0 auto;
+    margin: 0 1rem;
     padding: 0;
     color: #FCF3E3;
+    font-size: 1.5rem;
+    text-align: center;
   }
   
   .mainTextTwo a {
