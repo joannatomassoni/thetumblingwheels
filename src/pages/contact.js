@@ -5,8 +5,12 @@ import contactStyles from './contact.module.scss'
 const ContactPage = () => {
     return (
         <Layout>
-            <p className={contactStyles.mainText}>Please reach out at <a href='mailto:thetumblingwheels@gmail.com'>thetumblingwheels@gmail.com</a>,</p>
-            <p className={contactStyles.mainTextTwo}>or find us on <a href='https://www.facebook.com/thetumblingwheels'>Facebook</a> or <a href='https://www.instagram.com/thetumblingwheels/'>Instagram.</a></p>
+            <p className={contactStyles.container}>
+                <p className={contactStyles.text}>Reach out</p>
+                <p><a href='mailto:thetumblingwheels@gmail.com' target='_blank' rel='noreferrer'>email</a></p>
+                <p><a href='https://www.facebook.com/thetumblingwheels'> facebook</a></p>
+                <p><a href='https://www.instagram.com/thetumblingwheels/'> instagram</a></p>
+            </p>
         </Layout>
     )
 }
